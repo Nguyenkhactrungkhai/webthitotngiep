@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+* {margin: 0; padding: 0;}
+.container {width:1000px; height:1335px ; margin:auto;}
+.top {width:1000px; height:127px ;}
+.menu {width:1000px; height:58px ; background-color:#960;}
+.menu ul {list-style:none; display:inline}
+.menu ul li {display: inline; width:111px; height:58px; font-size:0;}
+.menu ul li:hover {color: #000; background-color:#666;}
+.cacdanhmuc {width:960px; height:50px; margin: 20px; ;  }
+.content {width:1000px; height:850px ; background-color:#cea2a2; border-radius: 10px;}
+.left {width:231px; height:850px ; float:left; background-color:#063}
+.leftMenu {width:231px; font-size: 0;}
+.leftMenu ul {list-style: none;}
+.leftMenu ul li {height: 37px; width: 205px; }
+.leftMenu ul li img{font-size:0}
+.leftMenu ul li img:hover {background:utl('images/phanloaihover_05.gif')  no-repeat}
+.mid {width:618px ;height: 850px; float:left;}
+.right {width:151px; height:850px ;float:left;}
+.clr {clear:both ;}
+.fotter {width:1000px; height:130px ;}
+.fotter_menu {width:1000px; height:30px ; background-color:#bd4c4c; text-align:center; line-height:30px}
+.fotter_menu a {text-decoration:none ;color: #fff;}
+.footer_content {width:1000px; height:100px ; background-color:#999}
+.hangmayanh {margin: auto; margin-top: 10px;}
+.hangmayanh tr td {width: 27%; text-align: center;}
