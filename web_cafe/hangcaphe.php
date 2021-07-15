@@ -45,7 +45,7 @@ disconnect_db();
             </div>
             <div class="mid">
             	<img style="margin: 50px 24px 0;" src="images/khuyenmai_03.jpg" width="575" height="97">
-              	<table class="hangcaphe" border="1">
+              	<table class="hangmayanh" border="1">
                     <tr>
                         <td>ma_cafe  </td>
                         <td>ten_cafe</td>

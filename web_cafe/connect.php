@@ -28,7 +28,7 @@ function disconnect_db()
     }
 }
 
-// Hàm lấy tất cả sinh viên
+// Hàm lấy tất cả hầng cà phê
 function get_all_hangcaphe()
 {
     // Gọi tới biến toàn cục $conn
