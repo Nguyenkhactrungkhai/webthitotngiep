@@ -10,7 +10,7 @@ function connect_db()
     
     // Nếu chưa kết nối thì thực hiện kết nối
     if (!$conn){
-        $conn = mysqli_connect('localhost', 'root', '', 'webbansua') or die ('Can\'t not connect to database');
+        $conn = mysqli_connect('localhost', 'root', '', 'webhoaqua') or die ('Can\'t not connect to database');
         // Thiết lập font chữ kết nối
         mysqli_set_charset($conn, 'utf8');
     }
@@ -28,8 +28,8 @@ function disconnect_db()
     }
 }
 
-// Hàm lấy tất cả hãng sữa
-function get_all_hangsua()
+// Hàm lấy tất cả hãng hoa quả
+function get_all_hanghoaqua()
 {
     // Gọi tới biến toàn cục $conn
     global $conn;
@@ -37,8 +37,8 @@ function get_all_hangsua()
     // Hàm kết nối
     connect_db();
     
-    // Câu truy vấn lấy tất cả hầng sũa
-    $sql = "select * from hangsua";
+    // Câu truy vấn lấy tất cả hầng hoa quả
+    $sql = "select * from hanghoaqua";
     
     // Thực hiện câu truy vấn
     $query = mysqli_query($conn, $sql);

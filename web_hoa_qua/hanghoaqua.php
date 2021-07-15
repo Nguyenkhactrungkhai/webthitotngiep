@@ -1,3 +1,8 @@
+<?php
+require 'connect.php';
+$hanghoaqua = get_all_hanghoaqua();
+disconnect_db();
+?>
 <!doctype html>
 <html>
 <head>
@@ -10,7 +15,7 @@
     	<div class="menu"> <img src="images/nhom 2.png" width="62" height="35" />
         <input type="text" />
         <ul> 
-        	<li> <a href="#">TRANG CHỦ </a></li>
+        	<li> <a href="index.php">TRANG CHỦ </a></li>
             <li> <a href="#">GIỚI THIỆU</a></li>
             <li> <a href="#">LIÊN HỆ</a></li>
             <li> <a href="#">GIỚI THIỆU </a></li>
@@ -20,7 +25,7 @@
         	<div class="left"> 
             	<p>  DANH MỤC </p>
             	<ul> 
-                	<li><a href="hanghoaqua.php"> Trai cay My</a></li>
+                	<li><a href="#"> Trai cay My</a></li>
                     <li><a href="#">  Trai cay Uc </a> </li>
                    	<li><a href="#"> Trai cay New Zealand </a> </li>
                     <li><a href="#">  Trai cay Trung Quoc</a></li>
@@ -33,51 +38,23 @@
             </div>
             <div class="right"><img src="images/index_main_bnr.png" width="337" height="150" /> 
                   <img style="margin-top:20px;" src="images/image_06.png" width="337" height="40" />
-                        			  <table border="1">
-                  	<tr> 
-                    	<td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
-                         <td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
-                        <td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
+     				<table class="hanghoaqua" border="1">
+                    <tr>
+                        <td>ma_trai_cay   </td>
+                        <td>ten_trai_cay</td>
+                        <td>dia_chi</td>
+                        <td>dienthoai</td>
                     </tr>
-                                      	<tr> 
-                    	<td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
-                         <td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
-                        <td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
+                    <?php foreach ($hanghoaqua as $item){ ?>
+                    <tr>
+                        <td><?php echo $item['ma_trai_cay']; ?></td>
+                        <td><?php echo $item['ten_trai_cay']; ?></td>
+                        <td><?php echo $item['dia_chi']; ?></td>
+                        <td><?php echo $item['dienthoai']; ?></td>
                     </tr>
-                                      	<tr> 
-                    	<td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
-                         <td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
-                        <td> <img src="images/product-02.png" width="106" height="83" />
-                        	<p class="pTim"> Quýt Úc</p>
-                           	<p class="pCam"> 150.000 đ </p>
-                        </td>
-                    </tr>
-                  </table>
-                  <p style="text-align: center; margin-top:5px;"> <a style="text-decoration:none; color: #003; font-weight: 600" href="#"> 1 2 3 >> </a> </p>
+                    <?php } ?>
+           		 </table>
+             		
              </div>
 			<div class="clr"> </div>
         </div>
