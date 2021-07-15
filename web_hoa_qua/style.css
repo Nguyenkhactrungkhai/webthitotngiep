@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+* {margin : 0; padding: 0;}
+.container {width:477px ; height:820px; margin:auto;}
+.menu {width: 477px; height: 35px; background-color:#0C0; display:flex;}
+.menu input {    width: 100px; height: 20px; margin: auto;}
+.menu ul {list-style: none; margin: auto; margin-left: 0;}
+.menu ul li { display: inline}
+.menu ul li a {text-decoration: none; color: #fff; font-size:14px;}
+.content {width: 477px; height:650px; margin: 20px 0;}
+.left {width: 120px; height:650px; float:left; background-color:#0C6}
+.left p { padding-left: 7px;; font-weight: 300; color: #fff;background-color:#0C0}
+.left ul {list-style: none;}
+.left ul li {}
+.left ul li a{text-decoration: none; color: #006; font-size: 13px;}
+.left ul li:hover{}
+.right {width: 337px; height:650px; float:left;background-color:#36C; margin-left: 20px;}
+.right table {width: 100%;}
+.right table p {font-size: 11px; text-align:center; margin-top: 7px;}
+.pTim {color: #63C};
+.pCam {color:#F90};
+.clr {clear: both;}
+.footer {width: 500px; height:130px;background-color:#0C0; } 
