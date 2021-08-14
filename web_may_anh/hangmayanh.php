@@ -1,8 +1,3 @@
-<?php
-require 'connect.php';
-$hangmayanh = get_all_hangmayanh();
-disconnect_db();
-?>
 <!doctype html>
 <html>
 <head>
@@ -52,16 +47,21 @@ disconnect_db();
                         <td>dia_chi</td>
                         <td>dien_thoai</td>
                     </tr>
-                    <?php foreach ($hangmayanh as $item){ ?>
-                    <tr>
-                        <td><?php echo $item['ma_may_anh']; ?></td>
-                        <td><?php echo $item['ten_may_anh']; ?></td>
-                        <td><?php echo $item['dia_chi']; ?></td>
-                        <td><?php echo $item['dien_thoai']; ?></td>
-                    </tr>
-                    <?php } ?>
+                    <?php 
+                        $link = mysqli_connect("localhost","root","","webmayanh");
+                        $sql = "select * from hangmayanh";
+                        $run = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($run)) {
+                            echo "<tr>
+                                <td>".$row["ma_may_anh"]."</td>
+                                <td>".$row["ten_may_anh"]."</td>
+                                <td>".$row["dia_chi"]."</td>
+                                <td>".$row["dien_thoai"]."</td>
+                            </tr>";
+                        }
+                    ?>
            		 </table>
-				
+				 
             </div>
             <div class="right"><img style="margin-top:50px" src="images/image1_20.gif" width="151" height="533"></div>
             <div class="clr"> </div>

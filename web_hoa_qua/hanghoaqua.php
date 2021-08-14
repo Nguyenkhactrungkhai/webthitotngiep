@@ -1,8 +1,3 @@
-<?php
-require 'connect.php';
-$hanghoaqua = get_all_hanghoaqua();
-disconnect_db();
-?>
 <!doctype html>
 <html>
 <head>
@@ -45,14 +40,20 @@ disconnect_db();
                         <td>dia_chi</td>
                         <td>dienthoai</td>
                     </tr>
-                    <?php foreach ($hanghoaqua as $item){ ?>
-                    <tr>
-                        <td><?php echo $item['ma_trai_cay']; ?></td>
-                        <td><?php echo $item['ten_trai_cay']; ?></td>
-                        <td><?php echo $item['dia_chi']; ?></td>
-                        <td><?php echo $item['dienthoai']; ?></td>
-                    </tr>
-                    <?php } ?>
+                    <?php 
+                    $link = mysqli_connect("localhost", "root","","webhoaqua");
+                    $sql = "select * from hanghoaqua";
+                    $run = mysqli_query($link, $sql);
+                    while($row = mysqli_fetch_array($run)) {
+                        echo 
+                            "<tr>
+                                <td>".$row['ma_trai_cay']."</td>
+                                <td>".$row['ten_trai_cay']."</td>
+                                <td>".$row['dia_chi']."</td>
+                                <td>".$row['dienthoai']."</td>
+                            </tr>";
+                        }
+                    ?>
            		 </table>
              		
              </div>

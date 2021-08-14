@@ -1,8 +1,3 @@
-<?php
-require 'connect.php';
-$hangsua = get_all_hangsua();
-disconnect_db();
-?>
 <!doctype html>
 <html>
 <head>
@@ -29,22 +24,27 @@ disconnect_db();
         <div class="mid"> 
 			<img style="margin-top: 13px;" src="images/hang_sua_04.gif" width="386" height="90">
             <h3> Bản tin trong ngày </h3>
-   			<table class="hangsua" border="1">
-            <tr>
-                <td>ma_hang_sua </td>
-                <td>ten_hang_sua</td>
-                <td>dia_chi</td>
-                <td>dienthoai</td>
-            </tr>
-            <?php foreach ($hangsua as $item){ ?>
-            <tr>
-                <td><?php echo $item['ma_hang_sua']; ?></td>
-                <td><?php echo $item['ten_hang_sua']; ?></td>
-                <td><?php echo $item['dia_chi']; ?></td>
-                <td><?php echo $item['dienthoai']; ?></td>
-            </tr>
-            <?php } ?>
-            </table>
+			<table border="1">
+				<tr>
+					<th>ma_hang_sua</th>
+					<th>ten_hang_sua</th>
+					<th>dia_chi</th>
+					<th>dienthoai</th>
+				</tr>
+			<?php 
+			$link = mysqli_connect("localhost", "root", "", "webbansua");
+			$sql="select * from hangsua";
+			$run = mysqli_query($link,$sql);
+			while($row=mysqli_fetch_array($run))
+			{
+			echo "
+				<tr style= 'text-align: center'> 
+					<td> ".$row['ma_hang_sua']." </td>
+					<td> ".$row['ten_hang_sua']." </td>
+					<td> ".$row['dia_chi']."  </td>
+					<td> ".$row['dienthoai']." </td>
+				</tr>" ;} ?>
+			</table>
        	</div>
         <div class="right"><img src="images/hs1.png" width="106" height="119"><img src="images/hs2.png" width="106" height="119"><img src="images/hs3.png" width="106" height="119"><img src="images/hs4.png" width="106" height="119"> </div>     
         <div class="clr"> </div>

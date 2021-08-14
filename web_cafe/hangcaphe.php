@@ -1,8 +1,3 @@
-<?php
-require 'connect.php';
-$hangcaphe = get_all_hangcaphe();
-disconnect_db();
-?>
 <!doctype html>
 <html>
 <head>
@@ -44,22 +39,26 @@ disconnect_db();
                 <img style="margin-top: 20px" src="images/logo_23.gif" width="225" height="270">
             </div>
             <div class="mid">
-            	<img style="margin: 50px 24px 0;" src="images/khuyenmai_03.jpg" width="575" height="97">
-              	<table class="hangmayanh" border="1">
+            	<img style="margin: 50px 24px 0;"th src="images/khuyenmai_03.jpg" width="575" height="97">
+              	<table class="hangcaphe" border="1">
                     <tr>
-                        <td>ma_cafe  </td>
-                        <td>ten_cafe</td>
-                        <td>trong_luong</td>
-                        <td>don_gia</td>
+                        <th>ma_cafe  </th>
+                        <th>ten_cafe</th>
+                        <th>ten_cafe</th>
+                        <th>don_gia</th>
                     </tr>
-                    <?php foreach ($hangcaphe as $item){ ?>
-                    <tr>
-                        <td><?php echo $item['ma_cafe']; ?></td>
-                        <td><?php echo $item['ten_cafe']; ?></td>
-                        <td><?php echo $item['trong_luong']; ?></td>
-                        <td><?php echo $item['don_gia']; ?></td>
-                    </tr>
-                    <?php } ?>
+                    <?php
+                    $connect = mysqli_connect("localhost", 'root', "" , "webcaphe");
+                    $sql = "select * from hangcaphe";
+                    $run = mysqli_query($connect, $sql);
+                    while($row=mysqli_fetch_array($run)) {
+                        echo "
+                            <tr>
+                                <td>".$row['ma_cafe']."</td>
+                                <td>".$row['ten_cafe']."</td>
+                                <td>".$row['ten_cafe']."</td>
+                                <td>".$row['don_gia']."</td>
+                            </tr>" ;} ?>
            		 </table>
             </div>
             <div class="right"><img style="margin-top:50px" src="images/logo_13.gif" width="151" height="321"><img src="images/logo_22.gif" width="151" height="379"></div>
