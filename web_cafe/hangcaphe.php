@@ -44,7 +44,7 @@
                     <tr>
                         <th>ma_cafe  </th>
                         <th>ten_cafe</th>
-                        <th>ten_cafe</th>
+                        <th>trong_luong</th>
                         <th>don_gia</th>
                     </tr>
                     <?php
@@ -56,7 +56,7 @@
                             <tr>
                                 <td>".$row['ma_cafe']."</td>
                                 <td>".$row['ten_cafe']."</td>
-                                <td>".$row['ten_cafe']."</td>
+                                <td>".$row['trong_luong']."</td>
                                 <td>".$row['don_gia']."</td>
                             </tr>" ;} ?>
            		 </table>
