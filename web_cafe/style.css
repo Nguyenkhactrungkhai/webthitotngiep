@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    height: 1260px;
+    margin: auto;
+}
+
+.top {
+    width: 1000px;
+    height: 127px;
+}
+
+.menu {
+    width: 1000px;
+    height: 60px;
+    background-color: #444444;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.menu ul li a:hover {
+    background-color: #bababa;
+    color: #000;
+}
+
+.cacdanhmuc {   
+    width: 960px;
+    height: 50px;
+    background-color: #bababa;
+    display: flex;
+    margin: 20px
+}
+
+.cacdanhmuc input {
+    width: 100%;
+    height: 43px;
+    margin: auto;
+    outline: none;
+}
+
+.layout {
+    width: 1000px;
+    height: 830px;
+    background-color: #ededed;
+    border-radius: 20px;
+}
+
+.left {
+    width: 225px;
+    height: 830px;
+    float: left;
+}
+
+.left ul {
+    list-style: none;
+    background-color: #bababa;
+}
+
+.left ul li {
+    width: 205px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 10px;
+    border-bottom: 1px solid #000;
+    background-color: #4a3023;
+}
+
+.left ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+.left ul li a:hover {
+    background-color: #a58053;
+    color: #c5c62c;
+}
+
+.mid {
+    width: 624px;
+    height: 830px;
+    float: left;
+}
+
+.right {
+    width: 151px;
+    height: 830px;
+    float: left;
+    font-size: 0;
+}
+
+.clr {
+    clear: both;
+}
+
+.sub-menu {
+    width: 1000px;
+    height: 30px;
+    background-color: #444444;
+}
+
+.sub-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.sub-menu ul li {
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10px;
+
+}
+
+.sub-menu ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+
+.sub-menu ul li a:hover {
+    color: #f7f700;
+}
+
+.bottom {
+    width: 1000px;
+    height: 100px;
+    background-color: #bababa;
+}
+
+.red {
+    color: red;
+}
+
+.font-weight {
+    font-weight: 700;
+}

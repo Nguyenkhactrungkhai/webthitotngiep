@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 800px;
+    margin: auto;
+}
+
+.top {
+    width: 600px;
+    height: 116px;
+}
+
+.menu {
+    width: 600px;
+    height: 30px;
+    background-color: #1562b1;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.left {
+    width: 108px;
+    height: 604px;
+    background-color: #24a4db;
+    float: left;
+}
+
+.left ul {
+    list-style: none;
+    width: 100%;
+}
+
+.left ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.left ul li a:hover {
+    background-color: #4d9f49;
+    color: #dce864;
+}
+
+
+.left div {
+    font-size: 0;
+}
+
+.mid {
+    width: 385px;
+    height: 604px;
+    float: left;
+}
+
+.title-news {
+    vertical-align: top;
+    color: #4d9f49;
+    padding-left: 15px;
+}
+
+.right {
+    width: 107px;
+    height: 604px;
+    background-color: #24a4db;
+    background-image: url('/images/bg_sua.jpg');
+    float: left;
+}
+
+.right img {
+    width: 107px;
+    height: 107px;
+}
+
+.clr {
+    clear: both;
+}
+
+.bottom {
+    width: 600px;
+    height: 50px;
+    background-color: #1562b1;
+}
+
+.bottom table {
+    margin: auto;
+}
+
+.bottom table tr td {
+    font-weight: 800;
+    color: #fff;
+}

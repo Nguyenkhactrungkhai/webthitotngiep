@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1000px;
+    height: 1240px;
+    margin: auto;
+}
+
+.top {
+    width: 1000px;
+    height: 127px;
+}
+
+.menu {
+    width: 1000px;
+    height: 60px;
+    background-color: #444444;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.menu ul li a {
+    display: block ;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu ul li a:hover {
+    background-color: #bababa;
+    color: #000;
+}
+
+.cacdanhmuc {
+    width: 960px;
+    height: 100px;
+}
+
+.cacdanhmuc img {
+    margin: 20px;
+}
+
+.content {
+    width: 1000px;
+    height: 800px;
+    background-color: #ededed;
+    border-radius: 20px;
+}
+
+.left {
+    width: 230px;
+    height: 800px;
+    float: left;
+    font-size: 0;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left ul li {
+}
+
+.left ul li a {
+}
+
+.left ul li a:hover {
+    color: #f5c827;
+}
+
+.mid {
+    width: 619px;
+    height: 800px;
+    float: left;
+}
+
+.mid table {
+    margin: auto;
+}
+
+.mid table tr td {
+    padding: 10px;
+}
+
+.right {
+    width: 151px;
+    height: 800px;
+    float: left;
+}
+
+.right img {
+    margin-top: 80px;
+}
+
+.text-red {
+    color: red;
+}
+
+.clr {
+    clear: both;
+}
+
+.submenu {
+    height: 30px;
+    width: 1000px;
+    background-color: #444444;
+}
+
+.submenu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.submenu ul li {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.submenu ul li a {
+    display: block ;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    border-right: 1px solid #fff;
+}
+
+.submenu ul li a:hover {
+    color: #f5c827;
+    border-right: 1px solid #f5c827;
+
+}
+
+.footer {
+    height: 100px;
+    width: 1000px;
+    background-color: #bababa;
+}
+
+.footer table {
+    margin: auto;
+}
